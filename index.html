@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>RubenBox</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/logo2.png">
   </head>
   <body>
     <center>
@@ -14,29 +15,59 @@
 
       <article>
         <h1>poeMachine</h1>
-        <p>At my school there was the <key> week of scientific culture! </key> <br>
-        I learned the basics of the <key> Python </key> programming language, both at school and on my own so I started working on a <key> program </key> which I then took to the science week: it can write poems in italian randomly from scratch! I made a <key> video </key> explaining how it works. <br> <br>
-        <key> \\ click below to watch the video // </key> <br> <br>
+        <p>At my school there was the <a href="https://settimanaculturascientifica.wordpress.com"> week of scientific culture! </a> <br>
+        I learned the basics of the <a href="https://www.programmareinpython.it"> Python </a> programming language, both at school and on my own so I started working on a <a href="https://replit.com/@RubenSabatini/poeMachine#main.py"> program </a> which I then took to the science week: it can write poems in italian randomly from scratch! I made a <a href="https://rubenbox.rubensabatini.repl.co/videos/poeMachine.mp4"> video </a> explaining how it works.<br><br>
+        <a> \\ click below to watch the video // </a><br><br>
         <video width="98%" controls>
           <source src="videos/poeMachine.mp4" type="video/mp4">
         </video>
         <br>
         you can try to use my program clicking
         <a href="https://replit.com/@RubenSabatini/poeMachine#main.py">>> here &lt&lt</a><br>
-        this is one of the better poems that it composed: <br><br><img src="images/poesia.png" width="50%"></img><br>
-        <key><i>
+        this is one of the better poems that it has composed:
+
+        <!--button-->
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <span id="dots">...</span><span id="more"><br>
+
+        <i>
+        "Eva vicina chiama<br>
+        il corpo<br>
+        l'onda conserva la quiete<br>
+        la rugiada silenziosa<br>
+        si reca nell'onda leggera."<br><br>
+        <a>
         "near Eve calls<br>
         the body,<br>
         the wave keeps quiet<br>
         the silent dew<br>
         goes into the light wave"<br><br>
-        </i></key>
-        17 Mag 2021</p>
+        </i></a><br><br>
+        17 May 2021</p>
+        </span>
       </article>
 
-      <article><h1 style="border-radius: 20px; font-size: 20px;"><a href="https://github.com/RubenSab">> my github profile [https://github.com/RubenSab]</a></h1></article>
-
+      <article><h1 style="border-radius: 20px; font-size: 20px; box-shadow: 0px 0px 15px #71EFA3;"><a href="https://github.com/RubenSab">> my github profile [https://github.com/RubenSab]</a></h1></article>
 
     </center>
   </body>
+
+  <script>
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
 </html>
